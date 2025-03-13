@@ -13,6 +13,7 @@ public class ExpBar extends JPanel implements Observer {
 
     ImageIcon backgroundImage;
     private JLabel lblArgent;
+    private JLabel suffixeArgent;
 
     public ExpBar()
     {
@@ -23,7 +24,16 @@ public class ExpBar extends JPanel implements Observer {
         lblArgent.setFont(new Font("Arial", Font.PLAIN,20 ));
         lblArgent.setForeground(Color.black);
         lblArgent.setOpaque(false);
+        lblArgent.setForeground(Color.white);
+
+        this.suffixeArgent = new JLabel("€");
+        suffixeArgent.setHorizontalAlignment(JLabel.LEFT);
+        suffixeArgent.setFont(new Font("Arial", Font.PLAIN,20 ));
+        suffixeArgent.setForeground(Color.white);
+        suffixeArgent.setOpaque(false);
+
         this.add(lblArgent);
+        this.add(suffixeArgent);
 
         Font minecraftFont = Utils.getFontFromResources("Minecraft");
         lblArgent.setFont(minecraftFont.deriveFont(Font.PLAIN, 40));
