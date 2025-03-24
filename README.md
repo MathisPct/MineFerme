@@ -1,4 +1,4 @@
-# HarvestMoon2
+# MineFerme
 
 ![header.png](doc%2Fheader.png)
 
